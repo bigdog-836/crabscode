@@ -12,7 +12,8 @@ This is my code for getting crabs to work (https://github.com/gjeunen/reference_
 4) conda config --add channels bioconda  
 5) conda config --add channels conda-forge  
 6) conda install -c bioconda crabs  
-crabs -h (check installation)  
+7) crabs -h (check installation)  
+
 Now that I have installed it I will only need to run:  
 module load Miniconda3/4.12.0 (to load miniconda)  
 $ conda activate /nesi/nobackup/uoo00105/ryan/crabs/crabs_env  
