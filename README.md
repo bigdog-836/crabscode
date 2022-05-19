@@ -17,3 +17,5 @@ This is my code for getting crabs to work (https://github.com/gjeunen/reference_
 Now that I have installed it I will only need to run:  
 module load Miniconda3/4.12.0 (to load miniconda)  
 $ conda activate /nesi/nobackup/uoo00105/ryan/crabs/crabs_env  
+
+crabs insilico_pcr --input complete_partial_mitogenomes.fa --output complete_partial_mitogenomes1.fa --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
