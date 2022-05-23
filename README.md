@@ -30,4 +30,7 @@ Assign taxa:
 
 14) crabs assign_tax --input complete_partial_mitogenomes1.fa --output output.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp
 
+NCBI
 15) crabs db_download --source ncbi --database nucleotide --query '12S[All Fields] AND txid7898[Organism:exp] AND mitochondrion[filter]' --output 12S_fish.fasta --keep_original yes --email ryan.r.easton@gmail.com --batchsize 5000
+
+16) crabs insilico_pcr --input 12S_fish.fasta --output 12S_fish_PCR.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
