@@ -47,3 +47,7 @@ EMBL:
 db_Merge (to merge output files)
 
 19) crabs db_merge --output output12S_Total_PCR.fasta --uniq yes --input mitofish_PCR.fasta 12S_fish_PCR.fasta 
+
+Merge assign taxonomy
+
+20) crabs assign_tax --input output12S_Total_PCR.fasta --output output12S_Total_PCR.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
