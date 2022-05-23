@@ -51,3 +51,7 @@ db_Merge (to merge output files)
 Merge assign taxonomy
 
 20) crabs assign_tax --input output12S_Total_PCR.fasta --output output12S_Total_PCR.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
+
+Dereplicate
+
+21) crabs dereplicate --input output12S_Total_PCR.tsv --output derep12S_Total_PCR.tsv --method uniq_species
