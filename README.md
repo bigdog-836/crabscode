@@ -55,3 +55,7 @@ Merge assign taxonomy
 Dereplicate
 
 21) crabs dereplicate --input output12S_Total_PCR.tsv --output derep12S_Total_PCR.tsv --method uniq_species
+
+seq_cleanup
+
+22) crabs seq_cleanup --input derep12S_Total_PCR.tsv --output seq_cleanup_12S_Total_PCR.tsv --minlen 100 --maxlen 500 --maxns 0 --enviro yes --species yes --nans 0
