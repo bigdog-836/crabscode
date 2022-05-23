@@ -19,3 +19,7 @@ Now that I have installed it I will only need to run:
 10) conda activate /nesi/nobackup/uoo00105/ryan/crabs/crabs_env  
 11) crabs db_download --source mitofish --output mitofish.fasta --keep_original yes
 12) crabs insilico_pcr --input complete_partial_mitogenomes.fa --output complete_partial_mitogenomes1.fa --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
+
+13) crabs db_download --source taxonomy (o assign a taxonomic lineage to each sequence in the reference database (see section 5. assign_tax), the taxonomic information needs to be downloaded. CRABS utilizes NCBI's taxonomy and downloads three specific files to your computer: (i) a file linking accession numbers to taxonomic IDs, (ii) a file containing information about the phylogenetic name associated with each taxonomic ID, and (iii) a file containing information how taxonomic IDs are linked.)
+
+14) 
