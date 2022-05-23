@@ -26,7 +26,7 @@ Now that I have installed it I will only need to run:
 
 13) crabs db_download --source taxonomy (o assign a taxonomic lineage to each sequence in the reference database (see section 5. assign_tax), the taxonomic information needs to be downloaded. CRABS utilizes NCBI's taxonomy and downloads three specific files to your computer: (i) a file linking accession numbers to taxonomic IDs, (ii) a file containing information about the phylogenetic name associated with each taxonomic ID, and (iii) a file containing information how taxonomic IDs are linked.)
 
-Assign taxa:
+Assign taxa MitoFish:
 
 14) crabs assign_tax --input complete_partial_mitogenomes1.fa --output output.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp
 
@@ -35,3 +35,6 @@ NCBI
 
 16) crabs insilico_pcr --input 12S_fish.fasta --output 12S_fish_PCR.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
 
+Assign taxa NCBI:
+
+17) crabs assign_tax --input 12S_fish_PCR.fasta --output output_12S_PCR.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp
