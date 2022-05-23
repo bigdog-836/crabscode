@@ -59,3 +59,8 @@ Dereplicate
 seq_cleanup
 
 22) crabs seq_cleanup --input derep12S_Total_PCR.tsv --output seq_cleanup_12S_Total_PCR.tsv --minlen 100 --maxlen 500 --maxns 0 --enviro yes --species yes --nans 0
+
+db_completeness
+8.3
+
+23) crabs visualization --method db_completeness --input seq_cleanup_12S_Total_PCR.tsv --species species.txt --taxid nodes.dmp --name names.dmp
