@@ -63,4 +63,4 @@ seq_cleanup
 db_completeness
 8.3
 
-23) crabs visualization --method db_completeness --input seq_cleanup_12S_Total_PCR.tsv --species species.txt --taxid nodes.dmp --name names.dmp
+23) crabs visualization --method db_completeness --input seq_cleanup_12S_Total_PCR.tsv --species species.txt --taxid nodes.dmp --name names.dmp -o test
