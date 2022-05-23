@@ -20,7 +20,7 @@ Now that I have installed it I will only need to run:
 
 10) conda activate /nesi/nobackup/uoo00105/ryan/crabs/crabs_env  
 
-11) crabs db_download --source mitofish --output mitofish.fasta --keep_original yes
+11) crabs db_download --source mitofish --output mitofish.fasta --keep_original yes (MitoFish)
 
 12) crabs insilico_pcr --input complete_partial_mitogenomes.fa --output complete_partial_mitogenomes1.fa --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
 
@@ -29,3 +29,5 @@ Now that I have installed it I will only need to run:
 Assign taxa:
 
 14) crabs assign_tax --input complete_partial_mitogenomes1.fa --output output.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp
+
+15) crabs db_download --source ncbi --database nucleotide --query '12S[All Fields] AND txid7898[Organism:exp] AND mitochondrion[filter]' --output 12S_fish.fasta --keep_original yes --email ryan.r.easton@gmail.com --batchsize 5000
