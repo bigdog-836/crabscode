@@ -38,3 +38,7 @@ NCBI
 Assign taxa NCBI:
 
 17) crabs assign_tax --input 12S_fish_PCR.fasta --output output_12S_PCR.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp
+
+EMBL:
+
+18) crabs db_download --source embl --database 'vrt*' --output embl_vrt.fasta --keep_original yes
