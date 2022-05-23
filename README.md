@@ -43,3 +43,7 @@ Assign taxa NCBI:
 EMBL:
 
 18) crabs db_download --source embl --database 'vrt*' --output embl_vrt.fasta --keep_original yes
+
+db_Merge (to merge output files)
+
+19) crabs db_merge --output output12S_Total_PCR.fasta --uniq yes --input mitofish_PCR.fasta 12S_fish_PCR.fasta 
