@@ -15,6 +15,7 @@ This is my code for getting crabs to work (https://github.com/gjeunen/reference_
 7) crabs -h (check installation)  
 
 Now that I have installed it I will only need to run:  
+
 9) module load Miniconda3/4.12.0 (to load miniconda)  
 
 10) conda activate /nesi/nobackup/uoo00105/ryan/crabs/crabs_env  
