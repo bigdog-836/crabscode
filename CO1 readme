@@ -1,1 +1,1 @@
-1) crabs db_download --source ncbi --database nucleotide --query 'coi[All Fields] AND txid7898[Organism:exp] AND mitochondrion[filter]' --output coi_fish.fasta --keep_original yes --email ryan.r.easton@gmail.com --batchsize 5000
+1) crabs db_download --source ncbi --database nucleotide --query 'COI[All Fields] AND txid7898[Organism:exp] AND mitochondrion[filter]' --output COI_fish.fasta --keep_original yes --email ryan.r.easton@gmail.com --batchsize 5000
