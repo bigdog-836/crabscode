@@ -42,7 +42,7 @@ Assign taxa NCBI:
 
 EMBL:
 
-18) crabs db_download --source embl --database 'vrt*' --output embl_vrt.fasta --keep_original yes
+18) crabs db_download --source embl --database 'VRT*' --output embl_vrt.fasta --keep_original yes
 
 db_Merge (to merge output files)
 
