@@ -39,4 +39,6 @@ Dereplicate
 
 8) crabs dereplicate --input Full_outputCOI_Total_PCR.tsv --output derep_Full_COI_Total_PCR.tsv --method uniq_species
 
+Seq cleanup
 
+9) crabs seq_cleanup --input derep_Full_COI_Total_PCR.tsv --output seq_cleanup_Full_COI_Total_PCR.tsv --minlen 100 --maxlen 500 --maxns 0 --enviro yes --species yes --nans 0
