@@ -54,17 +54,17 @@ db_Merge (to merge output files)
 
 Merge assign taxonomy
 
-21) crabs assign_tax --input output12S_Total_PCR.fasta --output output12S_Total_PCR.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
+21) crabs assign_tax --input Full_output12S_Total_PCR.fasta --output Full_output12S_Total_PCR.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
 
 Dereplicate
 
-23) crabs dereplicate --input output12S_Total_PCR.tsv --output derep12S_Total_PCR.tsv --method uniq_species
+23) crabs dereplicate --input Full_output12S_Total_PCR.tsv --output derep_Full_12S_Total_PCR.tsv --method uniq_species
 
 seq_cleanup
 
-24) crabs seq_cleanup --input derep12S_Total_PCR.tsv --output seq_cleanup_12S_Total_PCR.tsv --minlen 100 --maxlen 500 --maxns 0 --enviro yes --species yes --nans 0
+24) crabs seq_cleanup --input derep_Full_12S_Total_PCR.tsv --output seq_cleanup_Full_12S_Total_PCR.tsv --minlen 100 --maxlen 500 --maxns 0 --enviro yes --species yes --nans 0
 
 db_completeness
 8.3
 
-25) crabs visualization --method db_completeness --input seq_cleanup_12S_Total_PCR.tsv --species species.txt --taxid nodes.dmp --name names.dmp -o test
+25) crabs visualization --method db_completeness --input seq_cleanup_Full_12S_Total_PCR.tsv --species species.txt --taxid nodes.dmp --name names.dmp -o test
