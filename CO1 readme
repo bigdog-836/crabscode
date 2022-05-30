@@ -30,3 +30,7 @@ BOLD
 Merge
 
 6) crabs db_merge --output outputCOI_Total_PCR.fasta --uniq yes --input ncbiCOI_vrt_PCR.fasta emblCOI_vrt_PCR.fasta boldCOI_vrt_PCR.fasta
+
+Assign Taxa
+
+7) crabs assign_tax --input outputCOI_Total_PCR.fasta --output Full_outputCOI_Total_PCR.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp
