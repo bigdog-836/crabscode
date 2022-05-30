@@ -44,23 +44,27 @@ EMBL:
 
 18) crabs db_download --source embl --database 'VRT*' --output embl_vrt.fasta --keep_original yes
 
+19) crabs insilico_pcr --input embl_vrt.fasta --output embl12S_vrt_PCR.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
+
+20) crabs db_merge --output Full_output12S_Total_PCR.fasta --uniq yes --input output12S_Total_PCR.fasta embl12S_vrt_PCR.fasta  
+
 db_Merge (to merge output files)
 
-19) crabs db_merge --output output12S_Total_PCR.fasta --uniq yes --input mitofish_PCR.fasta 12S_fish_PCR.fasta 
+21) crabs db_merge --output output12S_Total_PCR.fasta --uniq yes --input mitofish_PCR.fasta 12S_fish_PCR.fasta 
 
 Merge assign taxonomy
 
-20) crabs assign_tax --input output12S_Total_PCR.fasta --output output12S_Total_PCR.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
+21) crabs assign_tax --input output12S_Total_PCR.fasta --output output12S_Total_PCR.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
 
 Dereplicate
 
-21) crabs dereplicate --input output12S_Total_PCR.tsv --output derep12S_Total_PCR.tsv --method uniq_species
+23) crabs dereplicate --input output12S_Total_PCR.tsv --output derep12S_Total_PCR.tsv --method uniq_species
 
 seq_cleanup
 
-22) crabs seq_cleanup --input derep12S_Total_PCR.tsv --output seq_cleanup_12S_Total_PCR.tsv --minlen 100 --maxlen 500 --maxns 0 --enviro yes --species yes --nans 0
+24) crabs seq_cleanup --input derep12S_Total_PCR.tsv --output seq_cleanup_12S_Total_PCR.tsv --minlen 100 --maxlen 500 --maxns 0 --enviro yes --species yes --nans 0
 
 db_completeness
 8.3
 
-23) crabs visualization --method db_completeness --input seq_cleanup_12S_Total_PCR.tsv --species species.txt --taxid nodes.dmp --name names.dmp -o test
+25) crabs visualization --method db_completeness --input seq_cleanup_12S_Total_PCR.tsv --species species.txt --taxid nodes.dmp --name names.dmp -o test
