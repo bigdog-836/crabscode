@@ -33,4 +33,6 @@ Merge
 
 Assign Taxa
 
-7) crabs assign_tax --input outputCOI_Total_PCR.fasta --output Full_outputCOI_Total_PCR.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp
+7) crabs assign_tax --input outputCOI_Total_PCR.fasta --output Full_outputCOI_Total_PCR.tsv --acc2tax ../nucl_gb.accession2taxid --taxid ../nodes.dmp --name ../names.dmp
+
+
