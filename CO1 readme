@@ -27,3 +27,6 @@ BOLD
 
 5) crabs insilico_pcr --input bold_actinopterygii.fasta --output boldCOI_vrt_PCR.fasta --fwd CTCAACYAATCAYAAAGATATYGGCAC --rev ACTTCYGGGTGRCCRAARAATCA --error 4.5
 
+Merge
+
+6) crabs db_merge --output outputCOI_Total_PCR.fasta --uniq yes --input ncbiCOI_vrt_PCR.fasta emblCOI_vrt_PCR.fasta boldCOI_vrt_PCR.fasta
