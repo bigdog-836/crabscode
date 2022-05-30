@@ -1,6 +1,10 @@
+NCBI
 1) crabs db_download --source ncbi --database nucleotide --query 'COI[All Fields] AND txid7898[Organism:exp] AND mitochondrion[filter]' --output COI_fish.fasta --keep_original yes --email ryan.r.easton@gmail.com --batchsize 5000
 
-2) crabs insilico_pcr --input ../embl_vrt.fasta --output emblCOI_vrt_PCR.fasta --fwd CTCAACYAATCAYAAAGATATYGGCAC --rev ACTTCYGGGTGRCCRAARAATCA --error 4.5
+2) crabs insilico_pcr --input COI_fish.fasta --output ncbiCOI_vrt_PCR.fasta --fwd CTCAACYAATCAYAAAGATATYGGCAC --rev ACTTCYGGGTGRCCRAARAATCA --error 4.5
+
+EMBL
+3) crabs insilico_pcr --input ../embl_vrt.fasta --output emblCOI_vrt_PCR.fasta --fwd CTCAACYAATCAYAAAGATATYGGCAC --rev ACTTCYGGGTGRCCRAARAATCA --error 4.5
 
 (COI Primers for embl)
   https://digital.csic.es/bitstream/10261/201130/1/Seafood_identification_2017.pdf
@@ -19,5 +23,7 @@ Single-Laboratory Validated Method for the Generation of DNA Barcodes for the Id
 https://academic.oup.com
 
 BOLD
-3) crabs db_download --source bold --database 'Actinopterygii' --output bold_actinopterygii.fasta --keep_original yes 
+4) crabs db_download --source bold --database 'Actinopterygii' --output bold_actinopterygii.fasta --keep_original yes 
+
+5) crabs insilico_pcr --input bold_actinopterygii.fasta --output boldCOI_vrt_PCR.fasta --fwd CTCAACYAATCAYAAAGATATYGGCAC --rev ACTTCYGGGTGRCCRAARAATCA --error 4.5
 
