@@ -35,4 +35,8 @@ Assign Taxa
 
 7) crabs assign_tax --input outputCOI_Total_PCR.fasta --output Full_outputCOI_Total_PCR.tsv --acc2tax ../nucl_gb.accession2taxid --taxid ../nodes.dmp --name ../names.dmp
 
+Dereplicate
+
+8) crabs dereplicate --input Full_outputCOI_Total_PCR.tsv --output derep_Full_COI_Total_PCR.tsv --method uniq_species
+
 
