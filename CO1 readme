@@ -1,1 +1,18 @@
 1) crabs db_download --source ncbi --database nucleotide --query 'COI[All Fields] AND txid7898[Organism:exp] AND mitochondrion[filter]' --output COI_fish.fasta --keep_original yes --email ryan.r.easton@gmail.com --batchsize 5000
+
+2) crabs insilico_pcr --input ../embl_vrt.fasta --output emblCOI_vrt_PCR.fasta --fwd CTCAACYAATCAYAAAGATATYGGCAC --rev ACTTCYGGGTGRCCRAARAATCA --error 4.5
+
+  https://digital.csic.es/bitstream/10261/201130/1/Seafood_identification_2017.pdf
+  
+   FISHCOILBC CTCAACYAATCAYAAAGATATYGGCAC
+   FISHCOIHBC ACTTCYGGGTGRCCRAARAATCA
+
+Handy, S. M.; Deeds, J. R.; Ivanova, N. V.; Hebert, P. D. N.; Hanner, R. H.; Ormos, A.; Weigt,
+517 L. A.; Moore, M. M.; Yancy, H. F. A single-laboratory validated method for the generation of DNA
+518 barcodes for the identification of fish for regulatory compliance. J. AOAC Int. 2011, 94 (1), 201–210.
+
+A single-laboratory validated method for the generation of DNA barcodes for the identification of fish for regulatory compliance - PubMed
+https://pubmed.ncbi.nlm.nih.gov
+
+Single-Laboratory Validated Method for the Generation of DNA Barcodes for the Identification of Fish for Regulatory Compliance
+https://academic.oup.com
