@@ -40,8 +40,9 @@ NCBI
 16b) crabs pga --input 12S_fish.fasta --database 12S_fish_PCR.fasta --output 12S_fish_PGA.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --percid 0.95 --coverage 0.95 --filter_method relaxed
 
 Assign taxa NCBI:
+17a) wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_gb.accession2taxid.gz -q --show-progress
 
-17) crabs assign_tax --input 12S_fish_PGA.fasta --output output_12S_PGA.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
+17b) crabs assign_tax --input 12S_fish_PGA.fasta --output output_12S_PGA.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
 
 EMBL:
 
