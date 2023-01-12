@@ -1,5 +1,6 @@
 # crabscode  
 This is my code for getting crabs to work (https://github.com/gjeunen/reference_database_creator)  
+First go to https://jupyter.nesi.org.nz/
 1) module load Miniconda3/4.12.0 (to load miniconda) 
 (we don't need to install conda because it is already on NeSI, so this is how we get access to it)  
 
