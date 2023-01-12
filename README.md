@@ -35,7 +35,9 @@ Assign taxa MitoFish:
 NCBI
 15) crabs db_download --source ncbi --database nucleotide --query '12S[All Fields] AND txid7898[Organism:exp] AND mitochondrion[filter]' --output 12S_fish.fasta --keep_original yes --email ryan.r.easton@gmail.com --batchsize 5000
 
-16) crabs insilico_pcr --input 12S_fish.fasta --output 12S_fish_PCR.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
+16a) crabs insilico_pcr --input 12S_fish.fasta --output 12S_fish_PCR.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
+
+16b) crabs pga --input 12S_fish.fasta --database 12S_fish_PCR.fasta --output 12S_fish_PGA.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --percid 0.95 --coverage 0.95 --filter_method relaxed
 
 Assign taxa NCBI:
 
