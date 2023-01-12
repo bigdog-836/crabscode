@@ -22,7 +22,7 @@ Now that I have installed it I will only need to run:
 10) conda activate /nesi/nobackup/uoo03004/ryan/crabs/crabs_env  
 
 MitoFish
-11) crabs db_download --source mitofish --output mitofish.fasta --keep_original yes (MitoFish)
+11) crabs db_download --source mitofish --output mitofish.fasta --keep_original yes
 
 12) crabs insilico_pcr --input mitofish.fasta --output mitofish_PCR.fasta --fwd GTCGGTAAAACTCGTGCCAGC --rev CATAGTGGGGTATCTAATCCCAGTTTG --error 4.5
 
