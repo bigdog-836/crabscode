@@ -41,8 +41,8 @@ NCBI
 
 Assign taxa NCBI:
 17a) wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_gb.accession2taxid.gz -q --show-progress
-
-17b) crabs assign_tax --input 12S_fish_PGA.fasta --output output_12S_PGA.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
+17b) conda install wget=1.21.3
+17c) crabs assign_tax --input 12S_fish_PGA.fasta --output output_12S_PGA.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
 
 EMBL:
 
