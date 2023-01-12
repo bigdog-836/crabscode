@@ -41,7 +41,7 @@ NCBI
 
 Assign taxa NCBI:
 
-17) crabs assign_tax --input 12S_fish_PGA.fasta --output output_12S_PGA.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp --missing output_12S_PGA_missing.tsv
+17) crabs assign_tax --input 12S_fish_PGA.fasta --output output_12S_PGA.tsv --acc2tax nucl_gb.accession2taxid --taxid nodes.dmp --name names.dmp 
 
 EMBL:
 
